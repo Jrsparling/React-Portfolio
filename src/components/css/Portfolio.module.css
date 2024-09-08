@@ -1,0 +1,58 @@
+
+.projectCard{
+    background-color: #696773;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.body{
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+.h1{
+    background-color: #819595;
+    color:#000000;
+    border-radius: 25px;
+    font-size: 3.2em;
+    line-height: 1.1;
+    text-align: center;
+    padding: 15px;
+}
+.container{
+    background-color: #363946;
+    color: #ffffff;
+    border-style: dotted;
+    flex-direction: row;
+    border-radius: 5px;
+    margin: 10;
+}
+.deployedLink{
+    background-color: #B1B6A6;
+    color:#000000;
+    border: solid;
+    border-radius: 25px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 15%;   
+}
+.githubLink{
+    background-color: #B1B6A6;
+    color:#000000;
+    border: solid;
+    border-radius: 25px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    max-width: 15%;   
+}
+.testBox{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

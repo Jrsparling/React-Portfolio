@@ -1,7 +1,7 @@
 export default function Header(){
     return (
    <h1>
-       <p>this is the Header</p>
+       <p>Jerry Sparling</p>
    </h1>
    )
 }

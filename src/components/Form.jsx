@@ -1,14 +1,15 @@
 import { useState } from 'react';
 
-export function validateEmail(email) {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());}
-
 function Form() {
 
+  const [errorMessage, setErrorMessage] = useState('');
     const [userName, setUserName] = useState(''); 
     const [email, setEmail] = useState(''); 
     const [message, setMessage] = useState('');
+
+    const validateEmail = (email) => {
+          const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(String(email).toLowerCase());}
 
     const handleInputChange = (e) => {
         const { target } = e;
@@ -38,7 +39,7 @@ function Form() {
             setErrorMessage('Email or username is invalid');
             return;
         }
-        if (!checkMessage(message)) {
+        if (message.length == 0) {
             setErrorMessage(
                 `Message is required`
             );

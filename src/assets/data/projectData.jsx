@@ -3,16 +3,17 @@ import ProjectCard from "../../components/ProjectCard";
 const ProjectData = () => {
     const projects = [
         {
-            title: 'NOSQL-Social-Network-API',
-            image: 'test img1',
+            title: 'NoSQL-Social-Network-API',
+            image: 'src/assets/images/NoSQL-Social-Network-API.JPG',
+            description: 'A back-end social network api that uses technologies such as MongoDB, Node.js, Express.js, and Mongoose. MongoDB manages the NoSQL database while Express.js and Mongoose are helper technologies. To test out the API calls a user can use Insomnia.',
             deployedLink: 'https://github.com/Jrsparling/NoSQL-Social-Network-API',
             githubLink: 'https://github.com/Jrsparling/NoSQL-Social-Network-API',
         },
         {
-            title: 'test title2',
-            image: 'test img2',
-            deployedLink: 'testDeployLink',
-            githubLink: 'testGithubLink',
+            title: 'Readme-generator',
+            image: 'src/assets/images/Readme-generator.JPG',
+            deployedLink: 'https://github.com/Jrsparling/Readme-generator',
+            githubLink: 'https://github.com/Jrsparling/Readme-generator',
         },
         {
             title: 'test title3',
@@ -21,8 +22,8 @@ const ProjectData = () => {
             githubLink: 'testGithubLink',
         },
         {
-            title: 'test title4',
-            image: 'test img4',
+            title: 'title4',
+            image: 'img4',
             deployedLink: 'testDeployLink',
             githubLink: 'testGithubLink',
         },
