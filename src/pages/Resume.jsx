@@ -1,4 +1,4 @@
-import ResumeData from "../assets/data/resumeData";
+import ResumeData from "../assets/data/ResumeData";
 import { Container } from "react-bootstrap";
 function Resume(){
     return(
