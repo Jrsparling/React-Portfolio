@@ -1,4 +1,5 @@
 import ProjectCard from "../../components/ProjectCard";
+import { Row } from 'react-bootstrap';
 
 const ProjectData = () => {
     const projects = [
@@ -29,9 +30,9 @@ const ProjectData = () => {
         },
     ];
     return (
-        <>
+        <Row>
         {projects.map(ProjectCard)}
-        </>
+        </Row>
     )
 };
 

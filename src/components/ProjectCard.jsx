@@ -1,9 +1,9 @@
-import { Container, Card, Col } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 
 function ProjectCard({title, image, description, deployedLink, githubLink}) {
   return (
-    <Container>
-    <Card style={{}}>
+    <Col>
+    <Card style={{width: "58rem", height: "50rem"}}>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Img src={image} alt={title}></Card.Img>
@@ -14,7 +14,7 @@ function ProjectCard({title, image, description, deployedLink, githubLink}) {
         </Col>
       </Card.Body>
     </Card>
-    </Container>
+    </Col>
   );
 }
 
